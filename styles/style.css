@@ -1,0 +1,114 @@
+:root{
+    --bgGray: #e9e9e9;
+    --blackPinterest: #111111;
+    --white: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    font-size: 16px;
+    padding: 1rem 0rem;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+    gap: 1rem;
+    width: 100%;
+    position: fixed;
+}
+
+nav button{
+    height: 3rem;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    border: none;
+}
+
+.item-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* NAV-left*/
+
+.section-left{
+    gap: .5rem;
+}
+.section-left .logo-pinterest{
+    margin-right: 1rem;
+    
+}
+.section-left button{
+    border-radius: 50px;
+    padding: 0rem 1rem;
+    cursor: pointer;
+    background-color: var(--white);
+    font-weight: 500;
+    font-size: 1rem;
+}
+.section-left button.focus{
+    background-color: var(--blackPinterest);
+    color: var(--white);
+}
+
+/* NAV-Middle*/
+
+.section-center{
+    background-color: var(--bgGray);
+    gap: .5rem;
+    width: 100%;
+    justify-content: flex-start;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.arm-finder{
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1fr;
+    padding-left: 1rem;
+}
+.finder{
+    background-color: var(--bgGray);
+    height: 3rem;
+    border: none;
+    width: 100%;
+}
+.finder:focus{
+    outline: none;
+}
+
+/* NAV-right */
+
+.section-right{
+    gap: .2rem;
+}
+.btn-square{
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: white;
+}
+.btn-square:hover{
+    background-color: var(--bgGray);
+}

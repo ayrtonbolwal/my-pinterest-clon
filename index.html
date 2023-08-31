@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Pinterest Clon</title>
+  </head>
+  <body>
+    <nav>
+      <div class="item-nav section-left">
+        <box-icon name="pinterest" type="logo" color="#e60023" class="logo-pinterest"></box-icon>
+        <button id="btn-inicio" class="focus">Inicio</button>
+        <button id="btn-explorar">Explorar</button>
+        <button id="btn-crear">
+          Crear <box-icon name="chevron-down"></box-icon>
+        </button>
+      </div>
+      <div class="item-nav section-center">
+        <div class="arm-finder"><box-icon name='search-alt-2' color='#5f5f5f' ></box-icon></div>
+        <input type="text" class="finder" placeholder="Buscar">
+      </div>
+      <div class="item-nav section-right">
+        <button id="btn-notify" class="btn-square"><box-icon name='bell' type='solid' color='#5f5f5f' ></box-icon></button>
+        <button id="btn-messages" class="btn-square"><box-icon name='message-rounded-detail' type='solid' color='#5f5f5f' ></box-icon></button>
+        <button id="btn-profile" class="btn-square"><div class="logo-profile">A</div></button>
+        <button id="btn-arrow-options" class="btn-square"><box-icon name="chevron-down"></box-icon></button>
+    </div>
+    </nav>
+  </body>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</html>
