@@ -1,5 +1,6 @@
 :root{
     --bgGray: #e9e9e9;
+    --bgGrayDark: #cfcfcf;
     --blackPinterest: #111111;
     --white: #fff;
 }
@@ -111,4 +112,46 @@ nav button{
 }
 .btn-square:hover{
     background-color: var(--bgGray);
+}
+
+/* Your Favorites */
+
+.favorites{
+    margin-top: 3rem;
+    padding: 2rem 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.favorite-target{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--bgGray);
+    border-radius: 1rem;
+    width: 20rem;
+    height: 8rem;
+}
+.favorite-target:hover{
+    cursor: pointer;
+    background-color: var(--bgGrayDark);
+}
+.favorite-target p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.favorite-target .miniatura-space{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-right: 2rem;
+}
+.favorite-target .miniatura-space img{
+    height: 100%;
+    width: 100%;
 }
