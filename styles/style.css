@@ -23,10 +23,12 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 2rem;
+  padding: 1rem 2rem;
   gap: 1rem;
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
   background-color: var(--white);
   z-index: 1;
 }
