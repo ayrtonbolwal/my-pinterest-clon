@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Pinterest Clon</title>
+  </head>
+  <body>
+    <nav>
+      <div class="item-nav section-left">
+        <box-icon
+          name="pinterest"
+          type="logo"
+          color="#e60023"
+          class="logo-pinterest"
+        ></box-icon>
+        <button id="btn-inicio" class="focus">Inicio</button>
+        <button id="btn-explorar">Explorar</button>
+        <button id="btn-crear">
+          Crear <box-icon name="chevron-down"></box-icon>
+        </button>
+      </div>
+      <div class="item-nav section-center">
+        <div class="arm-finder">
+          <box-icon name="search-alt-2" color="#5f5f5f"></box-icon>
+        </div>
+        <input type="text" class="finder" placeholder="Buscar" />
+      </div>
+      <div class="item-nav section-right">
+        <button id="btn-notify" class="btn-square">
+          <box-icon name="bell" type="solid" color="#5f5f5f"></box-icon>
+        </button>
+        <button id="btn-messages" class="btn-square">
+          <box-icon
+            name="message-rounded-detail"
+            type="solid"
+            color="#5f5f5f"
+          ></box-icon>
+        </button>
+        <button id="btn-profile" class="btn-square">
+          <div class="logo-profile">A</div>
+        </button>
+        <button id="btn-arrow-options" class="btn-square">
+          <box-icon name="chevron-down"></box-icon>
+        </button>
+      </div>
+    </nav>
+    <section class="favorites">
+      <div class="favorite-target">
+        <div class="miniatura-space">
+          <img
+            src="https://i.pinimg.com/170x/8a/5d/33/8a5d33b53a9b5a0e62094778ef8b425b.jpg"
+            alt="League of legends ideas"
+            class="miniatura-foto"
+          />
+        </div>
+        <p>League of legends</p>
+      </div>
+      <div class="favorite-target">
+        <div class="miniatura-space">
+          <img
+            src="https://i.pinimg.com/170x/57/a5/7f/57a57f3f70eef62248d4acdef68b4197.jpg"
+            alt="Casa minecraft ideas"
+            class="miniatura-foto"
+          />
+        </div>
+        <p>Casas minecraft</p>
+      </div>
+      <div class="favorite-target">
+        <div class="miniatura-space">
+          <img
+            src="https://i.pinimg.com/170x/62/dd/f7/62ddf78d31e50c46824d9e1f886feb2f.jpg"
+            alt="Fotografía ideas"
+            class="miniatura-foto"
+          />
+        </div>
+        <p>Fotografía</p>
+      </div>
+    </section>
+
+    <section class="mural">
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/07/e5/e1/07e5e1b2defdf5e62920a1ec95982d24.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/26/35/f4/2635f42083b1866fe9f27d59ce6d8402.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/6d/24/9b/6d249b9132434a56d8669da1549f8331.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/36/b8/6c/36b86cc23a301cfa9302a2478d705999.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/5c/61/da/5c61da0bdce54c5760bc2814dbfe520b.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/35/d7/be/35d7be06d67922c23e62491f6b2a278f.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/82/7c/89/827c89766b614a9806d396cef505ad20.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/d0/2c/5e/d02c5e5031522592d2b5c5b22568caff.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/ef/38/b8/ef38b83804b5c57c96a312e03d20d416.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/b6/a6/b6/b6a6b618a47919d83b8d0134d127f9b7.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/6f/fc/01/6ffc0180efa9b2af448582496aa7d7e1.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/f6/4f/16/f64f167adb2432cd894524432e71327c.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/e3/f4/db/e3f4dbb9b2acec3ed1a6a7e12b8bef58.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/3a/47/2a/3a472a9a98350ba04a2e6a327e47b053.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/bb/32/51/bb32510a41ed71b8f79501e37d9cc116.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/7d/1f/ad/7d1fadc2e9aa116639621d10000da549.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/26/dc/ce/26dcced292cbb382275d9914d8f8a9ef.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/2e/d0/63/2ed063acb9b2dfbfbacf494cdced0c3f.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/65/64/9c/65649ca8053fa55b00432bb719110592.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/2e/18/73/2e1873e31c4ac01626e8c4b533dc6741.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/1b/b1/11/1bb1113a68bbe691ba99a910c260e268.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/83/be/64/83be64e7c083015be79fbf7483719a35.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/a4/eb/7e/a4eb7e411461a8fcde93c37f657ea6bb.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/3a/c2/f6/3ac2f65a960553d2c5b4a4df5b3a8f39.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/f5/1c/d2/f51cd29793bc63c00d30179adaca7ee9.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/22/4b/d6/224bd60a1e263b4f50d334f216210a4c.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/0d/57/9d/0d579dca297f45617ca69a0b0b43f21b.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/cb/4c/49/cb4c49bc79bf49c063faeddef51907f4.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/ba/9e/ea/ba9eea2433747f40638ce68ff6684eca.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container item-mural">
+        <img
+          src="https://i.pinimg.com/236x/39/15/ac/3915acd38bdcdfe1864376196817d67a.jpg"
+          alt=""
+        />
+        <div class="item-bg-dark">
+          <button id="btn-save">Guardar</button>
+          <div class="section-btn">
+            <button id="btn-upload"><box-icon name="upload"></box-icon></button>
+            <button id="btn-dots">
+              <box-icon name="dots-horizontal-rounded"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="item-mural">
+            <div class="item-bg-dark">
+                
+            </div>
+            
+        </div> -->
+    </section>
+  </body>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</html>

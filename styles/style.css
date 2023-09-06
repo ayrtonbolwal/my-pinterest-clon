@@ -1,0 +1,234 @@
+:root {
+  --bgGray: #e9e9e9;
+  --bgGrayDark: #cfcfcf;
+  --bgGrayDarkOpa: #ffffffcf;
+  --blackPinterest: #111111;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  padding: 1rem 0rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+  z-index: 1;
+}
+
+nav button {
+  height: 3rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+}
+
+.item-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* NAV-left*/
+
+.section-left {
+  gap: 0.5rem;
+}
+.section-left .logo-pinterest {
+  margin-right: 1rem;
+}
+.section-left button {
+  border-radius: 50px;
+  padding: 0rem 1rem;
+  cursor: pointer;
+  background-color: var(--white);
+  font-weight: 500;
+  font-size: 1rem;
+}
+.section-left button.focus {
+  background-color: var(--blackPinterest);
+  color: var(--white);
+}
+
+/* NAV-Middle*/
+
+.section-center {
+  background-color: var(--bgGray);
+  gap: 0.5rem;
+  width: 100%;
+  justify-content: flex-start;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.arm-finder {
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 1fr;
+  padding-left: 1rem;
+}
+.finder {
+  background-color: var(--bgGray);
+  height: 3rem;
+  border: none;
+  width: 100%;
+}
+.finder:focus {
+  outline: none;
+}
+
+/* NAV-right */
+
+.section-right {
+  gap: 0.2rem;
+}
+.btn-square {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: white;
+}
+.btn-square:hover {
+  background-color: var(--bgGray);
+}
+
+/* Your Favorites */
+
+.favorites {
+  margin-top: 3rem;
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.favorite-target {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--bgGray);
+  border-radius: 1rem;
+  width: 20rem;
+  height: 8rem;
+}
+.favorite-target:hover {
+  cursor: pointer;
+  background-color: var(--bgGrayDark);
+}
+.favorite-target p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.favorite-target .miniatura-space {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-right: 2rem;
+}
+.favorite-target .miniatura-space img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Mural */
+.mural {
+  padding: 0rem 1rem;
+  columns: 6;
+  column-gap: 20px;
+}
+
+.item-mural {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.item-mural img {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+}
+.item-mural .item-bg-dark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  background-color: #11111150;
+}
+.item-mural .item-bg-dark:hover {
+  opacity: 100%;
+}
+.item-mural .item-bg-dark #btn-save{
+  font-weight: 500;
+  color: var(--white);
+  background-color: #E60023;
+  padding: 1rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  position: absolute;
+  right: .5rem;
+  top: .5rem;
+}
+.item-mural .item-bg-dark #btn-save:hover{
+  background-color: #c90321;
+}
+
+.item-mural .item-bg-dark .section-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: .5rem;
+  align-items: center;
+  position: absolute;
+  bottom: .5rem;
+  right: .5rem;
+}
+.item-mural .item-bg-dark .section-btn button{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  border: none;
+  background-color: var(--bgGrayDarkOpa);
+  cursor: pointer;
+}
+.item-mural .item-bg-dark .section-btn button:hover{
+  background-color: white;
+}
