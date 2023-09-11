@@ -232,3 +232,16 @@ nav button {
 .item-mural .item-bg-dark .section-btn button:hover{
   background-color: white;
 }
+
+@media screen and (max-width: 1000px) {
+  .mural {
+    columns: 3;
+  }
+
+  .favorites {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
